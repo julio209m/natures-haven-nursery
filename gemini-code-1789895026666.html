@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Haven Nursery - Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Nature's Haven Nursery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions about plant care or special orders? Send us a message!</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Inquiry</legend>
+
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="general">General Question</option>
+                        <option value="inventory">Plant Availability</option>
+                        <option value="order">Custom Order</option>
+                    </select><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                </fieldset>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nature's Haven Nursery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Color Palette Variables:
+   Primary/Accent: Forest Green (#2E6F40)
+   Secondary/Background Accent: Soft Sage (#E8F0E9)
+   Background: Cream White (#FAF9F6)
+   Text Color: Dark Charcoal (#2B2B2B)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF9F6;
+    color: #2B2B2B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header & Navigation Styles */
+header {
+    background-color: #2E6F40;
+    color: #FAF9F6;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0;
+}
+
+nav a {
+    color: #FAF9F6;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #FAF9F6;
+    color: #2E6F40;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #E8F0E9;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2E6F40;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #2E6F40;
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Media Elements */
+img, picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem 0;
+}
+
+figure {
+    background-color: #FAF9F6;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #2E6F40;
+    margin: 1rem 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    color: #2B2B2B;
+}
+
+audio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 2px solid #2E6F40;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    background-color: #FAF9F6;
+}
+
+legend {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #2E6F40;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #2E6F40;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #2E6F40;
+    color: #FAF9F6;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #235531;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2E6F40;
+    color: #FAF9F6;
+    margin-top: 2rem;
+}
+
+/* Desktop/Tablet Responsive Layout */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
