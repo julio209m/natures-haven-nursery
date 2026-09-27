@@ -24,14 +24,42 @@
             <p>Explore our carefully curated selection of plants and gardening essentials.</p>
 
             <figure>
-                <img src="gardening-kit.jpg" alt="A complete organic starter gardening kit with trowel, seed packets, and biodegradable pots">
-                <figcaption>Organic Starter Gardening Kit — Includes everything needed to start growing at home.</figcaption>
+                <img src="gardening-kit.jpg" alt="A complete organic starter gardening kit with trowel, seed packets, and gloves">
+                <figcaption>Organic Starter Gardening Kit - Includes everything needed to start growing at home.</figcaption>
             </figure>
+        </section>
+
+        <section>
+            <h2>Plant Care Calculator & Filter</h2>
+            <p>Find the best plants for your home environment:</p>
+            
+            <label for="light-select">Light Condition:</label>
+            <select id="light-select">
+                <option value="All">Show All Light Levels</option>
+                <option value="Low Light">Low Light</option>
+                <option value="Indirect Sunlight">Indirect Sunlight</option>
+                <option value="Full Sun">Full Sun</option>
+            </select>
+            <br><br>
+
+            <label for="pet-checkbox">
+                <input type="checkbox" id="pet-checkbox"> Pet-Friendly Plants Only
+            </label>
+            <br><br>
+
+            <button type="button" onclick="filterPlants()">Find My Plants</button>
+            <button type="button" onclick="filterPlants()">Save Preferences</button>
+
+            <div id="plant-results" style="margin-top: 20px;">
+                <!-- Filtered plant cards populate here via script.js -->
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Nature's Haven Nursery. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
